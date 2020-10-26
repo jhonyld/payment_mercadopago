@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mercadopago_sdk/mercadopago_sdk.dart';
+
 import 'package:payment_mercadopago/screens/homePage.dart';
 
-void main() async {
+import 'constants.dart';
+
+void main() {
   runApp(MyApp());
-  var mp = MP('CLIENT_ID', 'CLIENT_SECRET');
-
-  String token = await mp.getAccessToken();
-
-  print('Mercadopago token $token');
 }
 
 class MyApp extends StatelessWidget {
